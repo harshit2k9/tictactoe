@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #8052EC, #D161FF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+*/ h1 {
+  margin-top: 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #ddd;
+}
+
+#status {
+  text-de font-size: 1.2rem;
+  margin-top: 20px;
+  color: darkmaroon;
+  /* Change the color to dark maroon */
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+#restartBtn {
+  margin-top: 20px;
+  background-color: #0A0027;
+  /* Darker background color for better contrast */
+  color: white;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  display: inline-block;
+}
+
+#restartBtn:hover {
+  background-color: #1f1f1f;
+  /* Adjusted hover color */
+}
+
+.result-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.result-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.result-message {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.new-game-btn {
+  background: linear-gradient(135deg, #8052EC, #D161FF);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.new-game-btn:hover {
+  background: linear-gradient(to bottom, #292e49, #536976);
+  transform: scale(1.05);
+}
+
+.new-game-btn:hover {
+  background-color: #0056b3;
+}
